@@ -133,6 +133,7 @@ SUBROUTINE REGFAL(A, B, FUNC, TOLER, X, ITER)
   DOUBLE PRECISION, INTENT (in)  :: TOLER  !     Tolerance
   DOUBLE PRECISION, INTENT (out) :: X      !     Final approximation
   INTEGER, INTENT (out)          :: ITER   !     Number of iterations needed
+  INTEGER, EXTERNAL :: FUNC
 
 
   DOUBLE PRECISION :: X1, X2, F1, F2, FX
